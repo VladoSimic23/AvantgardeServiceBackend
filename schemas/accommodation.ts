@@ -105,11 +105,6 @@ export default {
                   ]
                 },
                 {
-                  name: "stupd",
-                  title: "Stupid",
-                  type: "string"
-                },
-                {
                   name: "videos",
                   title: "Videos",
                   type: "array",
