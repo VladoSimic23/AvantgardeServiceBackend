@@ -106,7 +106,7 @@ export default {
                     {
                       name: "reservationUrl",
                       title: "Reservation Url",
-                      type: "url"
+                      type: "string"
                     }
                   ]
                 }

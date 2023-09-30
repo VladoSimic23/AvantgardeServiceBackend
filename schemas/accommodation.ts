@@ -83,7 +83,7 @@ export default {
                     {
                       name: "houseUrl",
                       title: "House Url",
-                      type: "url"
+                      type: "string"
                     }
                   ]
                 },
