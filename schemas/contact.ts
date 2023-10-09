@@ -44,5 +44,88 @@ export default {
               },
         ]
       },
+      // Contact Details
+      {
+        name: "ContactDetails",
+        type: "object",
+        title: "Contact Details",
+        fields: [
+          {
+            name:"location",
+            type: "object",
+            title: "Location",
+            fields: [
+              {
+                name: "title",
+                type: "string",
+                title: "Title"
+              },
+              {
+                name: "theLocation",
+                type: "string",
+                title: "Location"
+              }
+            ]
+          },
+          {
+            name: "contacts",
+            title: "Contacts",
+            type: "object",
+            fields: [
+              {
+                name: "title",
+                type: "string",
+                title: "title"
+              },
+              {
+                name: "phoneNumber",
+                type: "string",
+                title: "Phone Number"
+              },
+              {
+                name: "email",
+                type: "email",
+                title: "Email"
+              }
+            ]
+          },
+          {
+            name: "socialMedia",
+            type: "object",
+            title: "Social Media",
+            fields: [
+              {
+                name: "title",
+                type: "string",
+                title: "Title"
+              },
+              {
+                name: "Media",
+                type: "array",
+                title: "Media",
+                of: [
+                  {
+                    name: "addMedia",
+                    type: "object",
+                    title: "Add Media",
+                    fields: [
+                      {
+                        name: "mediaImage",
+                        type: "image",
+                        title: "Media Image"
+                      },
+                      {
+                        name: "mediaUrl",
+                        type: "url",
+                        title: "Media Url"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
     ]
 }
